@@ -29,14 +29,14 @@ Optical character recognition is particularly challenging for Bengali. While Ben
 
 # Solution Approach 
  * Trained several models of **Resnet50, Resnet101, efficientnet b0, b1, b2, b3, SeREsNEXT** on Pytorch
- * *Ensembled* over the best performing models 
- * Tried *Cutmix, Cutout, Fmix* - new augmentaion techniques to achieve better generalization and results 
- * Trained *3 separate models for grapheme root, vowel diacritic and consonant diacritic* respectively 
- * Trained *1 common model for the entire task treating it as a multi-class classification task* 
- * Performed *Test Time Augmentations* to get better results
+ * **Ensembled** over the best performing models 
+ * Tried **Cutmix, Cutout, Fmix** - new augmentaion techniques to achieve better generalization and results 
+ * Trained **3 separate models for grapheme root, vowel diacritic and consonant diacritic** respectively 
+ * Trained **1 common model for the entire task treating it as a multi-class classification task** 
+ * Performed **Test Time Augmentations** to get better results
  * **Metric used** : *F1 score* 
- * **Loss Function** : *BCE with Logits, Categorical Crossentropy* 
- * **Optimizers** : *Adam, Ranger, SGD*
+ * **Loss Function** : *BCE with Logits*, *Categorical Crossentropy* 
+ * **Optimizers** : *Adam*, *Ranger*, *SGD*
  * **Best Recall Score on Public leaderboard** : *0.9690*
  * **Best Recall Score on Private leaderboard** : *0.9474*
  * **Position** : *229/2059* participating teams 
