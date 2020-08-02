@@ -1,8 +1,12 @@
 # Bengali-Handwritten-Grapheme-Classification
 [Kaggle Competition] **Given images of handwritten bengali images, the challenge was to separate the graphemes, the vowel diacritics and the consonant diacritics from the images** 
 
+## Demo 
+<div align = "center" >
+<img src='https://github.com/chefpr7/Bengali-Handwritten-Grapheme-Classification-/blob/master/ezgif.com-crop.gif'/>
+</div>
+
 ## Table of Contents:-
-* [Demo](#0)
 * [Problem Statement](#problem-statement)
 * [About the Dataset](#about-the-dataset)
 * [How to get the webapp running for you?](#how-to-get-the-webapp-running-for-you)
