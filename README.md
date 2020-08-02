@@ -4,6 +4,8 @@
 ## Demo 
 <div align = "center" >
 <img src='https://github.com/chefpr7/Bengali-Handwritten-Grapheme-Classification-/blob/master/ezgif.com-crop.gif'/>
+<br></br>
+Link to full video : 
 </div>
 
 ## Table of Contents:-
