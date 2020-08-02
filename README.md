@@ -15,4 +15,5 @@ Optical character recognition is particularly challenging for Bengali. While Ben
 <div align="center">
 <img src='https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F1095143%2Fa9a48686e3f385d9456b59bf2035594c%2Fdesc.png?generation=1576531903599785&alt=media' width=400 height=400 />
 </div>
+
 **For this competition, you’re given the image of a handwritten Bengali grapheme and are challenged to separately classify three constituent elements in the image: grapheme root, vowel diacritics, and consonant diacritics.**
