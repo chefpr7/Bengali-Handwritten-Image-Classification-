@@ -130,10 +130,10 @@ if st.button('Execute'):
     execute_bar = st.progress(0)
     status_text = st.empty()
     for percent_complete in range(100):
-        time.sleep(0.03)
+        time.sleep(0.05)
         execute_bar.progress(percent_complete + 1)
-        status_text.text("%d %s"%(percent_complete+1, '%'))
-    status_text.text('Done!')
+        status_text.text("%d %s"%(percent_complete+1, ' % '))
+    status_text.text(' Done Classifying! ') 
     root = data.loc[(data['component_type']=="grapheme_root")&(data['label']==int(g))].iloc[0, 2]
     vowel = data.loc[(data['component_type']=="vowel_diacritic")&(data['label']==int(v))].iloc[0, 2]
     consonant = data.loc[(data['component_type']=="consonant_diacritic")&(data['label']==int(c))].iloc[0, 2]
