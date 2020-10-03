@@ -58,9 +58,11 @@ def get_transforms(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]):
     list_trfms = Compose(list_transforms)
     return list_trfms
 
-#model = EfficientNet.from_name('efficientnet-b3')
-#in_features = model._fc.in_features
-#model._fc = nn.Linear(in_features,186)
+'''model = EfficientNet.from_name('efficientnet-b3')
+in_features = model._fc.in_features
+model._fc = nn.Linear(in_features,186)
+'''
+
 ckpt_path = "/content/drive/My Drive/resnet50/resnet50bengai.pth"
 model = pretrainedmodels.__dict__['resnet50'](num_classes=1000,pretrained=None)
 in_features = model.last_linear.in_features
@@ -69,14 +71,8 @@ device = torch.device("cpu")
 model.to(device)
 model.eval()
 state = torch.load(ckpt_path, map_location=lambda storage, loc: storage)
-#print(state["state_dict"])
-#for a in state["state_dict"]:
-#  print(a)
-  
-model.load_state_dict(state["state_dict"])
 
-#site_dict = { 'head/neck':2, 'lower extremity':3, 'oral/genital':4, 
-#                'palms/soles':5, 'torso':6,'upper extremity':7,'unknown':8}
+model.load_state_dict(state["state_dict"])
 
 tfms = get_transforms()
 
