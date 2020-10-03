@@ -1,7 +1,9 @@
 # Bengali Handwritten Image Classification
 [Kaggle Competition]
 <br/>
-**Given images of handwritten bengali images, the challenge was to separate the graphemes, the vowel diacritics and the consonant diacritics from the images Link to competition: https://www.kaggle.com/c/bengaliai-cv19** 
+**Given images of handwritten bengali images, the challenge was to separate the graphemes, the vowel diacritics and the consonant diacritics from the images**
+<br/>
+**Link to competition: https://www.kaggle.com/c/bengaliai-cv19** 
 
 # Demo 
 <div align = "center" >
