@@ -6,11 +6,6 @@ import torchvision
 import torch.nn.functional as F
 import torch.nn as nn
 import torchtoolbox.transform as transforms
-import pandas as pd
-import numpy as np
-from PIL import Image
-import cv2
-import time
 import os
 import cv2
 from PIL import Image
