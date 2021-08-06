@@ -1,4 +1,4 @@
 torch
 torchvision
 torchtoolbox
-opencv
+opencv-python
