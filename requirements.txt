@@ -1,6 +1,6 @@
 fastapi
 pydantic
-albumentations
+albumentations==0.4.6
 opencv-python
 python-multipart
 numpy
