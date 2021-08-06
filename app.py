@@ -46,6 +46,9 @@ import torchvision.models as models
 import pretrainedmodels
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
+!pip install gdown
+!gdown --id 1hLOLf92WE5fk8YzXiRYIqvSa7DhwlJOj
+
 def get_transforms(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]):
     list_transforms = []
     list_transforms.extend(
@@ -63,7 +66,7 @@ in_features = model._fc.in_features
 model._fc = nn.Linear(in_features,186)
 '''
 
-ckpt_path = "/content/drive/My Drive/resnet50/resnet50bengai.pth"
+ckpt_path = "resnet50bengai.pth"
 model = pretrainedmodels.__dict__['resnet50'](num_classes=1000,pretrained=None)
 in_features = model.last_linear.in_features
 model.last_linear = nn.Linear(in_features,186)
@@ -76,7 +79,7 @@ model.load_state_dict(state["state_dict"])
 
 tfms = get_transforms()
 
-data = pd.read_csv("/content/drive/My Drive/class_map.csv")
+data = pd.read_csv("class_map (1).csv")
 
 def predict(img):
 
